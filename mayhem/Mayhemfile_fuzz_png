@@ -1,0 +1,8 @@
+project: savantenvs/ares
+target: fuzz_png
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_png/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_png
+    libfuzzer: true
